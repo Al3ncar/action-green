@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: url("../assets/img/background_green.jpg");
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  background-position: 50% 80%;
+}
+header h1 {
+  padding: 9% 0 4% 0;
+  font-weight: 900;
+  font-size: 5vw;
+  color: #fff;
+}
+header .header-description {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 4%;
+}
+header .header-description p {
+  display: inline-block;
+  width: 50%;
+  font-size: 1.4vw;
+  text-align: center;
+  color: #fff;
+}
+header button {
+  color: #fff;
+  background-color: #66bb6a;
+  font-size: 1.1vw;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+main {
+  background: #f1f8e9;
+}
+main .card-conteiner {
+  width: 100%;
+  padding: 4% 0 7% 0;
+  text-align: center;
+}
+main .card-conteiner--card {
+  width: 22%;
+  margin: 3% 1% 0 1%;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 1vw;
+  overflow: hidden;
+  text-align: center;
+}
+main .card-conteiner--card figure {
+  width: 100%;
+}
+main .card-conteiner--card figure img {
+  width: 100%;
+}
+main .card-conteiner--card--description h2 {
+  padding: 4%;
+  font-size: 1.5vw;
+}
+main .card-conteiner--card--description p {
+  width: 80%;
+  display: inline-block;
+  font-size: 0.9vw;
+  padding: 4% 0 12% 0;
+}
+main .card-conteiner--card--description button {
+  color: #fff;
+  background-color: #66bb6a;
+  font-size: 1.1vw;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 2vw;
+  cursor: pointer;
+  padding: 3% 9%;
+  margin-bottom: 10%;
+}
+main .form-container {
+  text-align: center;
+}
+main .form-container h2 {
+  padding: 4% 0 2% 0;
+  font-size: 2.5vw;
+}
+main .form-container p {
+  display: inline-block;
+  width: 40%;
+  padding: 0 0 2% 0;
+  font-size: 1.1vw;
+  text-align: center;
+  color: #767676;
+}
+main .form-container form {
+  width: 100%;
+  text-align: center;
+  padding: 0 29%;
+}
+main .form-container form select,
+main .form-container form input {
+  width: 100%;
+  padding: 2% 5%;
+  margin: 2%;
+  font-size: 0.9vw;
+  border-radius: 1vw;
+  border: none;
+  display: block;
+}
+main .form-container form button {
+  color: #fff;
+  background-color: #66bb6a;
+  font-size: 1.1vw;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 2vw;
+  cursor: pointer;
+  width: 100%;
+  padding: 3% 0;
+  border-radius: 1vw;
+  margin-left: 2%;
+  margin-bottom: 10%;
+}
+
+footer {
+  background-color: #66bb6a;
+  color: #fff;
+  font-size: 1.2vw;
+  text-align: center;
+  padding: 2%;
+}/*# sourceMappingURL=style.css.map */

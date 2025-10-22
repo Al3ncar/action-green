@@ -1,0 +1,159 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+$color-title: #fff;
+$color-descript-form: #767676;
+$bg-btn: #66bb6a;
+$bg-card: $color-title;
+
+$font-size-btn: 1.1vw !default;
+
+@mixin bg-seetings {
+  background: url("../assets/img/background_green.jpg");
+  background-size: cover;
+}
+
+@mixin btn-seetings {
+  color: $color-title;
+  background-color: $bg-btn;
+  font-size: $font-size-btn;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 2vw;
+  cursor: pointer;
+}
+
+header {
+  @include bg-seetings;
+  text-align: center;
+  width: 100%;
+  height: 90vh;
+  flex-direction: column;
+  background-position: 50% 80%;
+
+  h1 {
+    padding: 9% 0 4% 0;
+    font-weight: 900;
+    font-size: 5vw;
+    color: $color-title;
+  }
+
+  .header-description {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 4%;
+    p {
+      display: inline-block;
+      width: 50%;
+      font-size: 1.4vw;
+      text-align: center;
+      color: $color-title;
+    }
+  }
+
+  button {
+    @include btn-seetings;
+  }
+}
+
+main {
+  background: #f1f8e9;
+
+  .card-conteiner {
+    width: 100%;
+    padding: 4% 0 7% 0;
+    text-align: center;
+
+    &--card {
+      width: 22%;
+      margin: 3% 1% 0 1%;
+      display: inline-block;
+      background-color: $bg-card;
+      border-radius: 1vw;
+      overflow: hidden;
+      text-align: center;
+
+      figure {
+        width: 100%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      &--description {
+        h2 {
+          padding: 4%;
+          font-size: 1.5vw;
+        }
+
+        p {
+          width: 80%;
+          display: inline-block;
+          font-size: 0.9vw;
+          padding: 4% 0 12% 0;
+        }
+
+        button {
+          @include btn-seetings;
+          padding: 3% 9%;
+          margin-bottom: 10%;
+        }
+      }
+    }
+  }
+
+  .form-container {
+    text-align: center;
+    h2 {
+      padding: 4% 0 2% 0;
+      font-size: 2.5vw;
+    }
+    p {
+      display: inline-block;
+      width: 40%;
+      padding: 0 0 2% 0;
+      font-size: 1.1vw;
+      text-align: center;
+      color: $color-descript-form;
+    }
+
+    form {
+      width: 100%;
+      text-align: center;
+      padding: 0 29%;
+
+      select,
+      input {
+        width: 100%;
+        // text-align: center;
+        padding: 2% 5%;
+        margin: 2%;
+        font-size: 0.9vw;
+        border-radius: 1vw;
+        border: none;
+        display: block;
+      }
+
+      button {
+        @include btn-seetings;
+        width: 100%;
+        padding: 3% 0;
+        border-radius: 1vw;
+        margin-left: 2%;
+        margin-bottom: 10%;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $bg-btn;
+  color: $color-title;
+  font-size: 1.2vw;
+  text-align: center;
+  padding: 2%;
+}
