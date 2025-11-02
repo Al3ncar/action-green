@@ -8,59 +8,62 @@
   </head>
   <body>
     <header>
-      <h1>Verde Ação</h1>
-      <div class="header-description">
-        <p>
-          Ser voluntário na Verde Ação é plantar esperança e colher
-          transformação. Juntos, cuidamos do planeta e inspiramos mudanças
-          reais!
-        </p>
-      </div>
-      <button>Quero ser voluntário</button>
+      <section>
+        <h1>Verde Ação</h1>
+        <div class="header-description">
+          <p>
+            Ser voluntário na Verde Ação é plantar esperança e colher
+            transformação. Juntos, cuidamos do planeta e inspiramos mudanças
+            reais!
+          </p>
+        </div>
+        <button>Quero ser voluntário</button>
+      </section>
     </header>
     <main>
       <section class="card-conteiner">
-        <div class="card-conteiner--card">
+        <aside class="card-conteiner--card">
           <figure>
-            <img src="./assets/img/card-img.jpg" alt="" />
+            <img src="./assets/img/card-1.jpg" alt="" />
+            <figcaption class="card-conteiner--card--description">
+              <h2>Plantio de mudas</h2>
+              <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
+              <button>Veja mais</button>
+            </figcaption>
           </figure>
-          <div class="card-conteiner--card--description">
-            <h2>Plantio de mudas</h2>
-            <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
-            <button>Veja mais</button>
-          </div>
-        </div>
+        </aside>
 
-        <div class="card-conteiner--card">
+        <aside class="card-conteiner--card">
           <figure>
-            <img src="./assets/img/card-img.jpg" alt="" />
+            <img src="./assets/img/card-2.jpg" alt="" />
+            <figcaption class="card-conteiner--card--description--small">
+              <h2>Educação Ambiental</h2>
+              <p>Promove oficinas e rodas de conversas</p>
+              <button>Veja mais</button>
+            </figcaption>
           </figure>
-          <div class="card-conteiner--card--description">
-            <h2>Plantio de mudas</h2>
-            <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
-            <button>Veja mais</button>
-          </div>
-        </div>
-        <div class="card-conteiner--card">
+        </aside>
+
+        <aside class="card-conteiner--card">
           <figure>
-            <img src="./assets/img/card-img.jpg" alt="" />
+            <img src="./assets/img/card-3.png" alt="" />
+            <figcaption class="card-conteiner--card--description--small">
+              <h2>Cuidados</h2>
+              <p>Ajude a manter areas preservadas</p>
+              <button>Veja mais</button>
+            </figcaption>
           </figure>
-          <div class="card-conteiner--card--description">
-            <h2>Plantio de mudas</h2>
-            <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
-            <button>Veja mais</button>
-          </div>
-        </div>
-        <div class="card-conteiner--card">
+        </aside>
+        <aside class="card-conteiner--card">
           <figure>
-            <img src="./assets/img/card-img.jpg" alt="" />
+            <img src="./assets/img/card-4.jpg" alt="" />
+            <figcaption class="card-conteiner--card--description--large">
+              <h2>Mapeamento</h2>
+              <p>Indentifique areas que precisam de mapeamento</p>
+              <button>Veja mais</button>
+            </figcaption>
           </figure>
-          <div class="card-conteiner--card--description">
-            <h2>Plantio de mudas</h2>
-            <p>Cada muda plantada ajuda a restaurar o meio ambiente</p>
-            <button>Veja mais</button>
-          </div>
-        </div>
+        </aside>
       </section>
 
       <section class="form-container">
@@ -73,7 +76,7 @@
           <input
             type="text"
             name="name"
-            placeholder="Nome completo"
+            placeholder="Nome"
             title="Por favor, insira o nome completo válido"
             pattern="^[A-Za-zÀ-ÿ\s]{2,}(?:\s+[A-Za-zÀ-ÿ\s]{2,})+$"
             required
@@ -94,11 +97,16 @@
             required
           />
 
-          <select name="" id="">
-            <option value="">Selecionar atividade</option>
-            <option value="a">Atividade A</option>
-            <option value="b">Atividade B</option>
+          <select class="select-field">
+            <option selected>Selecione uma atividade</option>
+            <option>Plantio de Mudas</option>
+            <option>Limpeza de Praia e Parques</option>
+            <option>Educação e Oficinas de Reciclagem</option>
+            <option>Mapeamento de Áreas de Risco</option>
+            <option>Ajuda Administrativa / Redes Sociais</option>
+            <option>Quero ajudar onde for mais necessário</option>
           </select>
+
           <button>Cadastrar</button>
         </form>
       </section>

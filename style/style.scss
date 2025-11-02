@@ -1,15 +1,14 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 $color-title: #fff;
+$color-form-title: #2a2a2a;
 $color-descript-form: #767676;
+
 $bg-btn: #66bb6a;
+$bg-form: #e8f5e9;
 $bg-card: $color-title;
 
-$font-size-btn: 1.1vw !default;
+$font-size-btn: 1.3vw !default;
 
 @mixin bg-seetings {
   background: url("../assets/img/background_green.jpg");
@@ -21,9 +20,29 @@ $font-size-btn: 1.1vw !default;
   background-color: $bg-btn;
   font-size: $font-size-btn;
   border: none;
-  padding: 1% 2%;
+  padding: 1% 4%;
   border-radius: 2vw;
   cursor: pointer;
+  font-weight: bolder;
+
+  &:hover {
+    background-color: #22c55e;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(34, 197, 94, 0.3);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -34,28 +53,33 @@ header {
   flex-direction: column;
   background-position: 50% 80%;
 
-  h1 {
-    padding: 9% 0 4% 0;
-    font-weight: 900;
-    font-size: 5vw;
-    color: $color-title;
-  }
-
-  .header-description {
-    text-align: center;
-    width: 100%;
-    margin-bottom: 4%;
-    p {
-      display: inline-block;
-      width: 50%;
-      font-size: 1.4vw;
-      text-align: center;
+  section {
+    height: 100%;
+    backdrop-filter: brightness(70%);
+    h1 {
+      padding: 9% 0 4% 0;
+      font-weight: 900;
+      font-size: 5vw;
       color: $color-title;
     }
-  }
 
-  button {
-    @include btn-seetings;
+    .header-description {
+      text-align: center;
+      width: 100%;
+      margin-bottom: 4%;
+      p {
+        display: inline-block;
+        width: 50%;
+        font-size: 1.4vw;
+        text-align: center;
+        color: $color-title;
+        font-weight: 700;
+      }
+    }
+
+    button {
+      @include btn-seetings;
+    }
   }
 }
 
@@ -64,26 +88,35 @@ main {
 
   .card-conteiner {
     width: 100%;
+    height: 100vh;
     padding: 4% 0 7% 0;
     text-align: center;
 
     &--card {
       width: 22%;
+      height: 80%;
+      // min-height: 40vh;
       margin: 3% 1% 0 1%;
       display: inline-block;
       background-color: $bg-card;
       border-radius: 1vw;
       overflow: hidden;
       text-align: center;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.229);
 
       figure {
         width: 100%;
+        height: 50%;
 
         img {
           width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
 
+      &--description--large,
+      &--description--small,
       &--description {
         h2 {
           padding: 4%;
@@ -91,7 +124,7 @@ main {
         }
 
         p {
-          width: 80%;
+          width: 74%;
           display: inline-block;
           font-size: 0.9vw;
           padding: 4% 0 12% 0;
@@ -103,18 +136,31 @@ main {
           margin-bottom: 10%;
         }
       }
+
+      &--description--small {
+        p {
+          width: 60%;
+        }
+      }
+      &--description--large {
+        p {
+          width: 59%;
+        }
+      }
     }
   }
 
   .form-container {
     text-align: center;
+    background-color: $bg-form;
     h2 {
       padding: 4% 0 2% 0;
       font-size: 2.5vw;
+      color: $color-form-title;
     }
     p {
       display: inline-block;
-      width: 40%;
+      width: 45%;
       padding: 0 0 2% 0;
       font-size: 1.1vw;
       text-align: center;
@@ -129,14 +175,85 @@ main {
       select,
       input {
         width: 100%;
-        // text-align: center;
-        padding: 2% 5%;
+        font-weight: 700;
+        padding: 3% 5%;
         margin: 2%;
-        font-size: 0.9vw;
+        font-size: 1vw;
         border-radius: 1vw;
         border: none;
         display: block;
+        color: $color-descript-form;
       }
+
+      select {
+        cursor: pointer;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%234a5568'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1vw center;
+        background-size: 3vw;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      .select-container {
+        display: block;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .select-label {
+        display: block;
+        font-size: 14px;
+        font-weight: bold;
+        color: #2d3748;
+        margin-bottom: 8px;
+        text-transform: none;
+      }
+
+      // .select-field {
+      //   display: block;
+      //   width: 100%;
+      //   padding: 14px 40px 14px 16px;
+      //   font-size: 15px;
+      //   color: #4a5568;
+      //   background: #ffffff;
+      //   border: 2px solid #e2e8f0;
+      //   border-radius: 8px;
+      //   cursor: pointer;
+
+      //   // Remove a seta padrão
+      //   appearance: none;
+      //   -webkit-appearance: none;
+      //   -moz-appearance: none;
+
+      //   &::-ms-expand {
+      //     display: none;
+      //   }
+
+      //   // Seta customizada com background image
+      //
+
+      //   // Estados
+      //   &:hover {
+      //     border-color: #cbd5e0;
+      //   }
+
+      //   &:focus {
+      //     outline: none;
+      //     border-color: #4299e1;
+      //   }
+
+      //   // Opções
+      //   option {
+      //     padding: 8px;
+      //     font-size: 14px;
+      //   }
+      // }
 
       button {
         @include btn-seetings;
