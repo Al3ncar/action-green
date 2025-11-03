@@ -4,7 +4,13 @@
 
 Landing page responsiva desenvolvida para a organização Verde Ação, focada em voluntariado ambiental. O projeto utiliza HTML e SCSS para criar uma interface limpa e moderna que transmite a missão da organização.
 
+### Design ⭐
+
+!["Inicio do projeto"]("./assets/readme/image.png")
+- Figma: [Verde Ação]('https://www.figma.com/design/eo0hlfn9iO7QLbv4l1OGz8/A%C3%A7%C3%A3o-verde?node-id=0-1&p=f&t=GmBHGQWLhBMuqelK-0')
+
 ## Tecnologias Utilizadas 🛠️
+
 - HTML5 - Estrutura semântica
 - SCSS - Estilização avançada com variáveis e mixins
 - CSS3 - Estilos responsivos e efeitos visuais
@@ -12,7 +18,7 @@ Landing page responsiva desenvolvida para a organização Verde Ação, focada e
 
 ## Estrutura do Projeto 📚
 
-```code 
+```code
 verde-acao/
 ├── index.html
 ├── assets/
@@ -26,7 +32,7 @@ verde-acao/
 │   ├── style.scss
 │   ├── style.css
 │   └── style.css.map
-├── readme/    
+├── readme/
 │   └── image.png
 └── README.md
 ```
@@ -37,7 +43,7 @@ verde-acao/
 
 ## Como Configurar e Executar ⚙️
 
-### 1 - Instalar a Extensão 
+### 1 - Instalar a Extensão
 
 - No VS Code: Abra as extensões (Ctrl+Shift+X)
 - Pesquise por "Live Sass Compiler"
@@ -54,7 +60,7 @@ verde-acao/
 - Abra o arquivo index.html em seu navegador
 - Ou use a extensão Live Server para desenvolvimento em tempo real
 
-#### Comandos Úteis: 
+#### Comandos Úteis:
 
 - Iniciar watch: Clique em "Watch Sass" na barra inferior
 - Parar watch: Clique em "Stop Watching Sass" na barra inferior
@@ -69,13 +75,14 @@ verde-acao/
 - Otimizado para performance
 - Uso de imagens otimizadas para web
 
-
 ## Personalização
+
 | Cores: Edite as variáveis SCSS no arquivo style/style.scss
 | Conteúdo: Modifique o texto no arquivo index.html
 | Imagens: Substitua as imagens na pasta assets/img/
 
 ### Notas de Desenvolvimento
+
 | O arquivo style.css.map é gerado automaticamente para debugging
 | As imagens estão organizadas na pasta assets/img/ para melhor organização
 | O SCSS é compilado automaticamente para CSS quando a extensão Watch Sass está ativa
