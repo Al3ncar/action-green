@@ -6,8 +6,10 @@ Landing page responsiva desenvolvida para a organização Verde Ação, focada e
 
 ### Design ⭐
 
-!["Inicio do projeto"]("./assets/readme/image.png")
-- Figma: [Verde Ação]('https://www.figma.com/design/eo0hlfn9iO7QLbv4l1OGz8/A%C3%A7%C3%A3o-verde?node-id=0-1&p=f&t=GmBHGQWLhBMuqelK-0')
+- Figma: <a href="https://www.figma.com/design/eo0hlfn9iO7QLbv4l1OGz8/A%C3%A7%C3%A3o-verde?node-id=0-1&p=f&t=GmBHGQWLhBMuqelK-0" target="_blank" >Verde ação</a>
+
+<img src="./assets/readme/image.png" alt="Imagem do header do projeto"/>
+
 
 ## Tecnologias Utilizadas 🛠️
 
