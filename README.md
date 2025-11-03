@@ -79,14 +79,14 @@ verde-acao/
 
 ## Personalização
 
-| Cores: Edite as variáveis SCSS no arquivo style/style.scss
-| Conteúdo: Modifique o texto no arquivo index.html
-| Imagens: Substitua as imagens na pasta assets/img/
+- Cores: Edite as variáveis SCSS no arquivo style/style.scss
+- Conteúdo: Modifique o texto no arquivo index.html
+- Imagens: Substitua as imagens na pasta assets/img/
 
 ### Notas de Desenvolvimento
 
-| O arquivo style.css.map é gerado automaticamente para debugging
-| As imagens estão organizadas na pasta assets/img/ para melhor organização
-| O SCSS é compilado automaticamente para CSS quando a extensão Watch Sass está ativa
+- O arquivo style.css.map é gerado automaticamente para debugging
+- As imagens estão organizadas na pasta assets/img/ para melhor organização
+- O SCSS é compilado automaticamente para CSS quando a extensão Watch Sass está ativa
 
 #### Plantando esperança, colhendo transformação. 🌱
